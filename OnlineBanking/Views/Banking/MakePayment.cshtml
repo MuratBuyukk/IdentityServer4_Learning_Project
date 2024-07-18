@@ -1,0 +1,19 @@
+﻿<h3>Merhaba</h3>
+
+<style>
+    .limited-width {
+        width: 30%;
+        word-wrap: break-word;
+    }
+</style>
+
+<h5>If you were able to access here, you have been successfully authorized...</h5>
+
+
+<h1>Balance : <strong>@ViewBag.Balance</strong> </h1>
+
+<br />
+<a asp-controller="Auth" asp-action="Index">Get New Token</a>
+
+<p class="limited-width">Access Token: <strong>@ViewBag.AccesToken</strong></p>
+<p class="limited-width">Refresh Token: <strong>@ViewBag.RefreshToken</strong></p>

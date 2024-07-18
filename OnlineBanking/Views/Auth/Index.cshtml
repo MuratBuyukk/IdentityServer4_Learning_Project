@@ -1,0 +1,16 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model IOrderedEnumerable<KeyValuePair<string, string>>
+
+<table>
+    @foreach (var property in Model)
+    {
+        <tr>
+            <td>@property.Key</td>
+            <td>@property.Value</td>
+        </tr>
+    }
+</table>
+
+<br />
+
+<a asp-action="NewAccessToken">Get Token</a>
